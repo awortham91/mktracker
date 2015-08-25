@@ -15,10 +15,19 @@ class PoolsController < ApplicationController
   end
 
   def start
-    redirect_to "http://google.com"
+    @pool = Pool.find_by(passcode: params[:passcode])
+    if @pool
+      redirect_to pool_path(@pool)
+    else
+      render :index
+    end
   end
 
   def show
+    @pool = Pool.find(params[:id])
+    @user = User.new
+
+    @users = User.where(pool_id: params[:id])
   end
 
   private

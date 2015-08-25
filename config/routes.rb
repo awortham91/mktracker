@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   root 'pools#index'
 
   resources :pools, only: [:index, :new, :create, :show] do
-    member do
+    resources :users, only: [:new, :create]
+    collection do
       post "start"
     end
   end

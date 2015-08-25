@@ -1,0 +1,12 @@
+<%= form_for [@pool, @user] do |f| %>
+  <%= f.label :name %>:
+  <%= f.text_field :name %><br />
+
+  <%= f.submit %>
+<% end %>
+
+<% @users.each do |user| %>
+  <div>
+    <%= user.name %>
+  </div>
+<% end %>
