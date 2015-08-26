@@ -7,7 +7,8 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     @user.pool_id = params[:pool_id]
     if @user.save
-      redirect_to 'http://google.com'
+      @pool = Pool.find(params[:pool_id])
+      redirect_to pool_path(params[:pool_id], q: @pool.passcode)
     end
   end
 

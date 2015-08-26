@@ -1,8 +1,11 @@
-<h1>Welcome to MarioKart</h1>
-
 <%= link_to "pools", new_pool_path %>
+<div class="pool_index_box">
+<p class="pool_index_title">Welcome to MarioKart</p>
+
+
 
 <form action="/pools/start" method="post">
-  <input type="text" name="passcode">
-  <input type="submit" value="Go!">
+  <input type="text" name="passcode" class="pool_index_input">
+  <input type="submit" value="Go!" class="pool_index_button">
 </form>
+</div>
