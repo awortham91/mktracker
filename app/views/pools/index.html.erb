@@ -1,11 +1,13 @@
-<%= link_to "pools", new_pool_path %>
-<div class="pool_index_box">
-<p class="pool_index_title">Welcome to MarioKart</p>
-
-
-
-<form action="/pools/start" method="post">
-  <input type="text" name="passcode" class="pool_index_input">
-  <input type="submit" value="Go!" class="pool_index_button">
-</form>
+<div class="pool_index_background">
+  <div class="pool_index_pusher"></div>
+  <div class="pool_index_bar">
+    <a href="/pools/new" class="pool_index_link"></a>
+  </div>
+  <div class="pool_index_box">
+    <p class="pool_index_title"></p>
+    <form action="/pools/start" method="post">
+      <input type="text" name="passcode" class="pool_index_input"/>
+      <button type="submit" class="pool_index_button">Go!</button>
+    </form>
+  </div>
 </div>
