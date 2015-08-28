@@ -1,3 +1,10 @@
+.pool_show_background {
+  background: url("http://i.ytimg.com/vi/HzJkJYrqQIU/maxresdefault.jpg");
+  background-size:cover;
+  height:100%;
+  width: 100%;
+}
+
 .pool_show_new {
   text-align: center;
   width:50%;
@@ -25,5 +32,6 @@
   color:lightblue;
   margin:5px;
   min-height: 40px;
-  font-size: 60px
+  font-size: 60px;
+  padding-left: 20px;
 }

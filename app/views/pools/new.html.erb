@@ -3,7 +3,7 @@
   <div class="pool_new_whole">
     <%= form_for @pool do |f| %>
       <%= f.label :passcode %>:
-      <%= f.text_field :passcode %><br />
+      <%= f.text_field :passcode, :class => "pool_new_input" %><br />
 
       <%= f.submit "New Crew", :class => "pool_new_submit" %>
     <% end %>

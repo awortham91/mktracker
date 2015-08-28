@@ -1,17 +1,19 @@
-<p id="debug">hello</p>
-<div class="pool_show_new">
-  <p class="pool_show_new_title">Choose your Player</p>
-  <%= form_for [@pool, @user] do |f| %>
-    <%= f.label :name %>:
-    <%= f.text_field :name %><br />
+<div class="pool_show_background">
+  <p id="debug">hello</p>
+  <div class="pool_show_new">
+    <p class="pool_show_new_title">Choose New Player</p>
+    <%= form_for [@pool, @user] do |f| %>
+      <%= f.label :name %>:
+      <%= f.text_field :name %>
 
-    <%= f.submit %>
-  <% end %>
-</div>
-<div class="pool_show_users">
-  <% @users.each do |user| %>
-    <div class="drag">
-      <%= user.name %>
-    </div>
-  <% end %>
+      <%= f.submit "Go!" %>
+    <% end %>
+  </div>
+  <div class="pool_show_users">
+    <% @users.each do |user| %>
+      <div class="drag">
+        <%= user.name %>
+      </div>
+    <% end %>
+  </div>
 </div>
