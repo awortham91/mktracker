@@ -1,0 +1,21 @@
+.pool_new_background {
+  background: url("http://www.shyguystoybox.net/Games/MarioKart64/maincharacters64.png");
+  background-size:cover;
+  height:100%;
+  width: 100%;
+}
+
+.pool_new_pusher {
+  display: block;
+  height:200px;
+}
+
+.pool_new_whole {
+  margin:auto;
+  text-align: center;
+  width: 50%;
+  background:blue;
+  opacity: 0.7;
+  color: white;
+  font-size: 40px;
+}

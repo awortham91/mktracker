@@ -44,7 +44,9 @@ body {
 .pool_index_link {
   color: white;
   background-image: url("https://cdn2.iconfinder.com/data/icons/media-and-navigation-buttons-round/512/Button_11-128.png");
-  background-size:contain;
+  display: block;
+  height:125px;
+  width: 125px;
 
 }
 
