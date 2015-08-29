@@ -23,7 +23,19 @@
 }
 
 .pool_show_users {
-  width:40%;
+  float:left;
+  width: 100%;
+}
+
+.pills {
+  margin-left:200px;
+}
+
+.two {
+   float:left;
+   width:200px;
+   margin-left:-100%;
+   background:green;
 }
 
 .drag {
